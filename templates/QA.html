@@ -1,0 +1,93 @@
+<html>
+<head><title>Get an answer</title></head>
+<body>
+
+        <h1 style="font-size:60px" align="center"><FONT FACE="EngraversGothic BT">  Ask a question to a Chicago sociologist of your choice</FONT></h1>
+
+        <form action="" name="choose" method="post">
+            <label style="font-size:48px" align="center">
+                <FONT FACE="EngraversGothic BT">
+                Select a sociologist:
+                </FONT>
+                <img src="/static/{{name}}.jpg"; width="200px"; height="200px"; style="position:absolute;left:800px;top:100px;">
+                <select name=mySelection style="font-size:24px">
+                    <option value=1>
+                        Andrew Abott
+                    </option>
+                    <option value=2>
+                        Kathleen Cagney
+                    </option>
+                    <option value=3>
+                        Terry N. Clark
+                    </option>
+                    <option value=4>
+                        Elisabeth S. Clemens
+                    </option>
+                    <option value=5>
+                        James Evans
+                    </option>
+                    <option value=6>
+                        Marco Garrido
+                    </option>
+                    <option value=7>
+                        Andreas Glaeser
+                    </option>
+                    <option value=8>
+                        Karin Knorr Cetina
+                    </option>
+                    <option value=9>
+                        Edward O. Laumann
+                    </option>
+                    <option value=10>
+                        Cheol-Sung Lee
+                    </option>
+                    <option value=11>
+                        John Levi Martin
+                    </option>
+                    <option value=12 {{mac}}>
+                        Omar McRoberts
+                    </option>
+                    <option value=13 {{p}}>
+                        John F. Padgett
+                    </option>
+                    <option value=14>
+                        Stephen Raudenbush
+                    </option>
+                    <option value=15>
+                        Kristen Schilt
+                    </option>
+                    <option value=16>
+                        Ross M. Stolzenberg
+                    </option>
+                    <option value=17>
+                        Forrest Stuart
+                    </option>
+                    <option value=18>
+                        Richard Taub
+                    </option>
+                    <option value=19>
+                       Linda Waite
+                    </option>
+                    <option value=20>
+                        Kazuo Yamaguchi
+                    </option>
+                    <option value=21 {{z}}>
+                        Dingxin Zhao
+                    </option>
+                </select>
+                <input type=submit name=person value="Choose me">
+            </label>
+            <br>
+            <p><label style="font-size:48px" align="center">
+                <FONT FACE="EngraversGothic BT">
+                So, what do you want to ask?
+                </FONT>
+                <input type=string name=question style="width: 1000px; font-size:24px" align="center">
+            </label></p>
+        </form>
+
+        <div class='answer' style="font-size:36px" align="center">
+            {{answer}}
+        </div>
+</body>
+</html>
