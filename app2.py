@@ -196,19 +196,14 @@ def get_an_answer():
                     time.sleep(0.1)
                     engine.say(str(30-i))
                     engine.setProperty('volume',engine.getProperty('volume')*1.2)
-                for i in range(20):
-                    time.sleep(1)
-                    string=''
-                    for j in range(0,i*3):
-                        string+=chr(random.randint(97, 122))
-                    engine.say(string)
                 
                 
             # for voice in voices:
-            # 	engine.setProperty('voice', voice.id)  # changes the voice
-            # 	print voice.id
-            # 	engine.say(response)
-            engine.runAndWait()      	
+            #   engine.setProperty('voice', voice.id)  # changes the voice
+            #   print voice.id
+            #   engine.say(response)
+            engine.runAndWait() 
+                 	
 
             return render_template('QA.html', name=name,answer = response,mac=mac,p=p,z=z)#selected_p = selected_p, selected_m = selected_m, selected_z = selected_z) 
         # else:
